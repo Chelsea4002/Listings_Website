@@ -5,7 +5,7 @@ import PageHeader from "@/components/PageHeader";
 
 export function getStaticProps() {
     return new Promise((resolve,reject)=>{
-      fetch("https://long-pear-millipede-kilt.cyclic.app/api/listings/1019168").then(res=>res.json()).then(data=>{
+      fetch("https://long-pear-millipede-kilt.cyclic.app/api/listings/10267144").then(res=>res.json()).then(data=>{
         resolve({ props: { listing: data } })
       })
     })
@@ -34,7 +34,7 @@ export default function About(props) {
                         travel around the world.</p>
                         <p>
                             One of the places that I would like to visit is the:
-                            <Link href="/listing/10109896"> "THE Place to See Sydney's FIREWORKS"</Link>
+                            <Link href="/listing/10267144"> "IPANEMA LUXURY PENTHOUSE with MAID"</Link>
                         </p>
                     </Card.Body>
                     <ListingDetails listing={props.listing} />  
