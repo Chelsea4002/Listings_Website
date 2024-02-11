@@ -1,3 +1,15 @@
+/*********************************************************************************
+* WEB422 – Assignment 3
+*
+* I declare that this assignment is my own work in accordance with Seneca's
+* Academic Integrity Policy:
+* 
+* https://www.senecapolytechnic.ca/about/policies/academic-integrity-policy.html
+* 
+* Name: Hyerang Cho   Student ID: 165832221    Date: February 16, 2024
+*
+********************************************************************************/
+
 import useSWR from "swr";
 import { useState, useEffect } from "react";
 import { Pagination, Accordion } from "react-bootstrap";
@@ -33,7 +45,9 @@ export default function Home() {
       <Accordion>
         {pageData.map((listing) => (
           <Accordion.Item eventKey={listing._id} key={listing._id}>
-            <Accordion.Header><strong>{listing.name}</strong> {listing.address.street}</Accordion.Header>
+            <Accordion.Header>
+              <strong>{listing.name}</strong>&nbsp;{listing.address.street}
+              </Accordion.Header>
             <Accordion.Body>
               <ListingDetails listing={listing} />
             </Accordion.Body>
