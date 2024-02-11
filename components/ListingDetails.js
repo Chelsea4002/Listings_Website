@@ -13,7 +13,7 @@ export default function ListingDetails({listing}) {
                             "https://placehold.co/600x400?text=Photo+Not+Available";
                         }}
                         className="img-fluid w-100"
-                        src={"https://a0.muscache.com/im/pictures/5d83827b-eb4f-4bfe-9075-1dc553a2c1a9.jpg?aki_policy=large"}
+                        src={listing.images.picture_url}
                         alt="Listing Image"
                     />
                     <br />
