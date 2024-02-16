@@ -54,6 +54,7 @@ export default function Home() {
           </Accordion.Item>
         ))}
       </Accordion>
+      <br />
       <Pagination>
         <Pagination.Prev onClick={previous} />
         <Pagination.Item>{page}</Pagination.Item>
