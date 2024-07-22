@@ -1,15 +1,3 @@
-/*********************************************************************************
-* WEB422 – Assignment 3
-*
-* I declare that this assignment is my own work in accordance with Seneca's
-* Academic Integrity Policy:
-* 
-* https://www.senecapolytechnic.ca/about/policies/academic-integrity-policy.html
-* 
-* Name: Hyerang Cho   Student ID: 165832221    Date: February 16, 2024
-*
-********************************************************************************/
-
 import useSWR from "swr";
 import { useState, useEffect } from "react";
 import { Pagination, Accordion } from "react-bootstrap";
@@ -20,7 +8,7 @@ export default function Home() {
   const [page, setPage] = useState(1);
   const [pageData, setPageData] = useState([]);
 
-  const { data, error } = useSWR(`https://long-pear-millipede-kilt.cyclic.app/api/listings?page=${page}&perPage=10`);
+  const { data, error } = useSWR(`https://listing-api-dh93.onrender.com/api/listings?page=${page}&perPage=10`);
 
   useEffect(() => {
     if (data) {

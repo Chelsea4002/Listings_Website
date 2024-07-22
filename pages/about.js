@@ -5,7 +5,7 @@ import PageHeader from "@/components/PageHeader";
 
 export function getStaticProps() {
     return new Promise((resolve,reject)=>{
-      fetch("https://long-pear-millipede-kilt.cyclic.app/api/listings/10267144").then(res=>res.json()).then(data=>{
+      fetch("https://listing-api-dh93.onrender.com/api/listings/10267144").then(res=>res.json()).then(data=>{
         resolve({ props: { listing: data } })
       })
     })
